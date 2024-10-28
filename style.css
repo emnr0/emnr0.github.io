@@ -363,3 +363,93 @@ p {
     background-color: #b5cfff; /* darker shade for dark mode */
   }
 }
+/* ... existing styles ... */
+/* Add this for the arrow rotation */
+.nav-link.dropdown-toggle::after {
+  transition: transform 0.2s ease;
+}
+
+.nav-link.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(-180deg);
+}
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* ... existing styles ... */
+
+/* Update header styles */
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 700; /* or 400 for lighter weight */
+  font-size: 3rem; /* adjust size as needed */
+}
+
+/* For any other header text you want to style */
+header .nav-link {
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem; /* adjust size as needed */
+}
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* ... existing styles ... */
+
+/* Update header styles - using more specific selectors */
+header h1 {
+  font-family: "Pacifico", cursive !important;
+  font-weight: 700; /* or 400 for lighter weight */
+  font-size: 3rem; /* adjust size as needed */
+}
+
+header .nav-link {
+  font-family: "Pacifico", cursive !important;
+  font-size: 1.2rem; /* adjust size as needed */
+}
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/* Custom button styles */
+.custom-btn {
+  font-family: "Abril Fatface", cursive;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .custom-btn {
+    background-color: #ffb6c1; /* Pastel pink */
+    color: #333;
+  }
+
+  .custom-btn:hover {
+    background-color: #98fb98; /* Light pastel green */
+    color: white;
+    transform: translateY(-2px);
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .custom-btn {
+    background-color: #add8e6; /* Pastel blue */
+    color: #333;
+  }
+
+  .custom-btn:hover {
+    background-color: #98fb98; /* Light pastel green */
+    color: white;
+    transform: translateY(-2px);
+  }
+}
+
+/* Optional: Add box shadow for more depth */
+.custom-btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
