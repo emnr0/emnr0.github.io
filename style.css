@@ -1,0 +1,365 @@
+/* Light mode styles (default) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffccd5; /* darker light pastel pink */
+  transition: background-color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background-color: #ffb5c0; /* even darker pastel pink */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  flex: 1;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff69b4;
+}
+
+.nav-link {
+  color: #333 !important;
+}
+
+.nav-link:hover {
+  color: #ff69b4 !important;
+}
+
+.nav-link.active {
+  background-color: #ff69b4 !important;
+  color: white;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.fa-heart {
+  color: red;
+  margin-left: 10px;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ccdeff; /* darker light pastel blue */
+    color: #333;
+  }
+
+  header,
+  footer {
+    background-color: #b5cfff; /* even darker pastel blue */
+  }
+
+  .nav-link:hover {
+    color: #4a90e2 !important;
+  }
+
+  .nav-link.active {
+    background-color: #4a90e2 !important;
+  }
+
+  footer a:hover {
+    color: #4a90e2;
+  }
+}
+
+.con {
+  justify-content: center;
+}
+
+/* Add these styles for the dropdown */
+.dropdown-menu {
+  background-color: #ffb5c0; /* light mode dropdown background */
+}
+
+.dropdown-item {
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* In dark mode section */
+@media (prefers-color-scheme: dark) {
+  .dropdown-menu {
+    background-color: #b5cfff; /* dark mode dropdown background */
+  }
+
+  .dropdown-item:hover {
+    background-color: #4a90e2;
+    color: white;
+  }
+}
+
+/* Update footer styles */
+.footer {
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer span,
+.footer .social-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer .social-link:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer i {
+  font-size: 0.9rem;
+}
+
+/* Add these styles for the project cards */
+.project-card {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode */
+.project-card {
+  background-color: #ffb5c0; /* darker than body background */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    background-color: #b5cfff; /* darker than body background */
+  }
+}
+
+.card-title {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.carousel {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;
+}
+
+/* Add these styles for the description card */
+.description-card {
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 1rem auto;
+  animation: rainbow-shadow 5s linear infinite;
+}
+
+/* Light mode */
+.description-card {
+  background-color: #ff9fad; /* darker than project card */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .description-card {
+    background-color: #9ebeff; /* darker than project card */
+  }
+}
+
+/* Rainbow shadow animation */
+@keyframes rainbow-shadow {
+  0% {
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+  }
+  16.666% {
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
+  }
+  33.333% {
+    box-shadow: 0 5px 15px rgba(255, 255, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+  }
+  66.666% {
+    box-shadow: 0 5px 15px rgba(0, 0, 255, 0.3);
+  }
+  83.333% {
+    box-shadow: 0 5px 15px rgba(238, 130, 238, 0.3);
+  }
+  100% {
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+  }
+}
+
+.description-card .card-text {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.wave-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 2rem 0;
+  animation: rainbow-shadow 5s linear infinite;
+}
+
+.wave-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.wave-title {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100px;
+  background: linear-gradient(45deg, #ffb5c0, #ffd1d8, #ffe4e8);
+  animation: wave-animation 10s linear infinite;
+}
+
+.wave1 {
+  opacity: 0.8;
+  animation-delay: 0s;
+  height: 80px;
+}
+
+.wave2 {
+  opacity: 0.6;
+  animation-delay: -2s;
+  height: 90px;
+}
+
+.wave3 {
+  opacity: 0.4;
+  animation-delay: -4s;
+  height: 100px;
+}
+
+.wave4 {
+  opacity: 0.2;
+  animation-delay: -6s;
+  height: 110px;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rainbow-shadow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  16.666% {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+  }
+  33.333% {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  }
+  66.666% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+  }
+  83.333% {
+    box-shadow: 0 0 20px rgba(238, 130, 238, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .wave {
+    background: linear-gradient(45deg, #b5cfff, #cce4ff, #e6f3ff);
+  }
+}
+
+/* Make text responsive */
+@media (max-width: 768px) {
+  .wave-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wave-title {
+    font-size: 2rem;
+  }
+}
+
+.simple-card {
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color: #ffb5c0; /* darker shade for light mode */
+}
+
+.simple-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .simple-card {
+    background-color: #b5cfff; /* darker shade for dark mode */
+  }
+}
