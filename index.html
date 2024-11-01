@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/1422277c/img/favicon_32x32.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Overlay for sidebar -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="left-section">
+        <i class="material-icons menu-button">menu</i>
+        <div class="youtube-logo">
+          <img
+            src="https://www.youtube.com/s/desktop/1422277c/img/favicon_144x144.png"
+            alt="YouTube Logo"
+            class="youtube-icon"
+          />
+          <span class="youtube-text">YouTube</span>
+        </div>
+      </div>
+      <div class="middle-section">
+        <input type="text" placeholder="Search" />
+        <button class="search-button">
+          <i class="material-icons">search</i>
+        </button>
+        <button class="voice-search-button">
+          <i class="material-icons">mic</i>
+        </button>
+      </div>
+      <div class="right-section">
+        <i class="material-icons">video_call</i>
+        <div class="messages-container">
+          <i class="material-icons messages-icon">chat_bubble</i>
+          <div class="messages-dropdown">
+            <div class="dropdown-header">Direct Messages</div>
+            <div class="messages-list">
+                <div class="message-row">
+                    <img src="./assets/images/thumb9.jpg" alt="Channel avatar" class="message-avatar" />
+                    <div class="message-details">
+                        <div class="message-name">Professional Paws</div>
+                        <div class="message-preview">Heyy</div>
+                    </div>
+                    <div class="message-time">2h ago</div>
+                </div>
+
+                <div class="message-row">
+                    <img src="./assets/images/thumb12.jpeg" alt="Channel avatar" class="message-avatar" />
+                    <div class="message-details">
+                        <div class="message-name">Kitty Family Vlogs</div>
+                        <div class="message-preview">How did you do that?</div>
+                    </div>
+                    <div class="message-time">5h ago</div>
+                </div>
+
+                <div class="message-row">
+                    <img src="./assets/images/thumb8.jpeg" alt="Channel avatar" class="message-avatar" />
+                    <div class="message-details">
+                        <div class="message-name">Code & Cats</div>
+                        <div class="message-preview">i thought you meowed away</div>
+                    </div>
+                    <div class="message-time">1d ago</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <i class="material-icons">notifications</i>
+        <img
+          src="./assets/images/caty.png"
+          alt="Profile picture"
+          class="profile-picture"
+        />
+      </div>
+    </header>
+
+    <!-- Mini Sidebar -->
+    <div class="mini-sidebar">
+      <div class="nav-item active">
+        <i class="material-icons">home</i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item">
+        <i class="material-icons">play_circle_outline</i>
+        <span>Shorts</span>
+      </div>
+      <div class="nav-item">
+        <i class="material-icons">subscriptions</i>
+        <span>Subscriptions</span>
+      </div>
+      <div class="nav-item">
+        <i class="material-icons">play_circle_filled</i>
+        <span>You</span>
+      </div>
+      <div class="nav-item">
+        <i class="material-icons">download</i>
+        <span>Downloads</span>
+      </div>
+    </div>
+
+    <!-- Main Sidebar -->
+    <nav class="sidebar">
+      <div class="nav-section">
+        <div class="nav-item active">
+          <i class="material-icons">home</i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item">
+          <i class="material-icons">explore</i>
+          <span>Explore</span>
+        </div>
+        <div class="nav-item">
+          <i class="material-icons">subscriptions</i>
+          <span>Subscriptions</span>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="nav-item">
+          <i class="material-icons">video_library</i>
+          <span>Library</span>
+        </div>
+        <div class="nav-item">
+          <i class="material-icons">history</i>
+          <span>History</span>
+        </div>
+        <div class="nav-item">
+          <i class="material-icons">watch_later</i>
+          <span>Watch later</span>
+        </div>
+        <div class="nav-item">
+          <i class="material-icons">thumb_up</i>
+          <span>Liked videos</span>
+        </div>
+      </div>
+
+      <!-- Inside the sidebar -->
+      <div class="sidebar-footer">
+        <div class="copyright">
+          © 2024 YouTube 
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-area">
+      <main class="main-content">
+        <div class="filters">
+          <button class="filter-button active">All</button>
+          <button class="filter-button">Music</button>
+          <button class="filter-button">Gaming</button>
+          <button class="filter-button">Live</button>
+          <button class="filter-button">News</button>
+          <button class="filter-button">Sports</button>
+        </div>
+
+        <div class="videos-grid">
+          <!-- Video Card 1 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/cataccident.jpeg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">8:24</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb2.jpeg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Story Time - I got stuck in a tree :(
+                </h3>
+                <p class="channel-name">WhiskerStories</p>
+                <p class="video-metadata">128K views • 3 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 2 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catprof.jpg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">1:08:51</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb1.png"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Professor Cat Explains Quantum Physics
+                </h3>
+                <div>
+                <p class="channel-name">Academic Paws</p>
+                <p class="video-metadata">256K views • 1 week ago</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 3 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catfarm.jpg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">15:33</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb10.jpg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">A Day in the Life: Farm Cat Edition</h3>
+                <p class="channel-name">Barn Cats Daily</p>
+                <p class="video-metadata">89K views • 2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 4 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/cateng.jpeg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">7:15</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb3.jpg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Engineering Solutions by Professional Cat
+                </h3>
+                <p class="channel-name">MeowMechanics</p>
+                <p class="video-metadata">432K views • 5 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 5 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catprego.jpeg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">21:42</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb12.jpeg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Expecting Kittens: A Mother Cat's Journey
+                </h3>
+                <p class="channel-name">Kitty Family Vlogs</p>
+                <p class="video-metadata">167K views • 4 days ago</p>
+              </div>
+            </div>
+          </div>
+ <!-- Video Card 6 -->
+ <div class="video-card">
+    <div class="thumbnail">
+      <img
+        src="./assets/images/thumbnail/catjob.jpeg"
+        alt="Video thumbnail"
+      />
+      <div class="duration">12:45</div>
+    </div>
+    <div class="video-info">
+      <img
+        class="channel-avatar"
+        src="./assets/images/thumb9.jpg"
+        alt="Channel avatar"
+      />
+      <div class="video-details">
+        <h3 class="video-title">
+          A Day in the Life: Corporate Cat's 9-5 Journey
+        </h3>
+        <p class="channel-name">Professional Paws</p>
+        <p class="video-metadata">203K views • 3 days ago</p>
+      </div>
+    </div>
+  </div>
+          <!-- Video Card 7 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catbigpharma.jpg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">9:55</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb6.jpg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Cat Exposes Big Pharma: The Catnip Conspiracy
+                </h3>
+                <p class="channel-name">Investigative Felines</p>
+                <p class="video-metadata">345K views • 1 month ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 8 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catmoney.jpg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">14:27</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb5.jpg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  How I Made $1M Trading Stocks - Financial Advice from a Cat
+                </h3>
+                <p class="channel-name">Wealthy Whiskers</p>
+                <p class="video-metadata">892K views • 2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 9 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catmusic.jpg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">18:03</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb11.jpeg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  3AM Piano Concert - Cat's Nocturnal Symphony
+                </h3>
+                <p class="channel-name">Midnight Meow Music</p>
+                <p class="video-metadata">234K views • 3 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 10 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catcomp.jpeg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">6:42</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb8.jpeg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Debugging with My Cat: A Programmer's Guide
+                </h3>
+                <p class="channel-name">Code & Cats</p>
+                <p class="video-metadata">67K views • 12 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 11 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catgrocery.jpg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">25:18</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb7.jpeg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  Shopping with Cats: Grocery Store Adventures
+                </h3>
+                <p class="channel-name">Feline Foodie</p>
+                <p class="video-metadata">445K views • 5 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 12 -->
+          <div class="video-card">
+            <div class="thumbnail">
+              <img
+                src="./assets/images/thumbnail/catmom.jpeg"
+                alt="Video thumbnail"
+              />
+              <div class="duration">13:37</div>
+            </div>
+            <div class="video-info">
+              <img
+                class="channel-avatar"
+                src="./assets/images/thumb4.jpg"
+                alt="Channel avatar"
+              />
+              <div class="video-details">
+                <h3 class="video-title">
+                  A Day in the Life of a Cat Mom: Reality vs Expectations
+                </h3>
+                <p class="channel-name">Purrfect Parenting</p>
+                <p class="video-metadata">167K views • 1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
